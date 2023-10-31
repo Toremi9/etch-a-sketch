@@ -13,16 +13,17 @@ headlinediv.appendChild(headline);
 
 let grid = document.createElement('div');
 grid.className = 'grid';
-grid.setAttribute('style', 'display: flex; border: solid 2px; justify-content: center; margin: auto; width: 500px; height: 500px;');
+grid.setAttribute('style', 'display: flex; border: solid 1px; justify-content: center; margin: auto; width: 512px; height: 512px;');
 
 for (let i = 0; i < rows; i++){
     const row = document.createElement('div');
+    row.setAttribute('style', `flex: 1 1 100%; border: solid black 1px;`);
     for (let j = 0; j < columns; j++) {
         const cell = document.createElement('div');
         cell.className = 'cell';
-        cell.setAttribute('style', `width: ${500 / rows}px; height: ${500 / rows}px; border: solid black 1px; box-sizing: border-box;`);
+        cell.setAttribute('style', `flex: 1 1 100%; border: solid black 1px;`);
         cell.addEventListener('mouseover', () => {
-            cell.setAttribute('style', `width: ${500 / rows}px; height: ${500 / rows}px; border: solid black 1px; background-color: yellow; box-sizing: border-box;`);
+            cell.setAttribute('style', `border: solid black 1px; background-color: yellow;`);
         });
         row.appendChild(cell);
     }

@@ -1,0 +1,30 @@
+
+#main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+};
+
+/* 
+.grid {
+    display: flex;
+    flex: 1;
+    border: solid 1px;
+    justify-content: center;
+    margin: auto;
+    width: 512px;
+    height: 512px;
+}; */
+
+.row {
+    width: 512px;
+    height: 512px;
+    flex: 1;
+};
+
+.cell {
+    flex: auto;
+    border: solid black 1px;
+
+};
+
