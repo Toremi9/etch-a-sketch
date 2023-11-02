@@ -1,22 +1,31 @@
-
-#main {
+.gridAndMenu {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-};
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
 
-/* 
+.headline {
+    text-align: center;
+}
+
+.leftOfGrid {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-content: center;
+}
+
 .grid {
     display: flex;
-    flex: 1;
-    border: solid 1px;
+    border: solid 3px;
+    padding: 1px;
     justify-content: center;
-    margin: auto;
-    width: 512px;
-    height: 512px;
-}; */
+    width: 500px;
+    height: 500px;
+};
 
-.row {
+/* .row {
     width: 512px;
     height: 512px;
     flex: 1;
@@ -26,5 +35,5 @@
     flex: auto;
     border: solid black 1px;
 
-};
+}; */
 
